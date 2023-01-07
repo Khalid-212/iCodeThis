@@ -1,0 +1,102 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #5B1D8C;
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    width: 50%;
+    margin: 10px auto;
+    color: #fefefe;
+    font-size: 80px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 900;
+    animation-name: a;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out
+}
+.text{
+    color: #E9D5FF;
+    font-size: 30px;
+    padding: 20px;
+    width: 50%;
+    margin: 0px auto 0px;
+    text-align: center;
+    font-weight: 900;
+}
+.moretext{
+    color: #E9D5FF;
+    font-size: 20px;
+    padding: 20px;
+    width: 50%;
+    margin: 0px auto 0px;
+    text-align: center;
+    font-weight: 900;
+}
+.moretext a{
+    color: #EC4899;
+    text-decoration: underline;
+}
+.projectLinks a{
+    color: #EC4899;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    background-color: #E9D5FF;
+    /* background-color: #5B1D8C; */
+    border-radius: 10px;
+}
+.projectLinks{    
+    margin: 0px auto 0px;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.links:hover{
+    animation-name: b;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* transform: rotate(30deg); */
+}
+@keyframes b {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+        font-size: 20;
+    }
+    50% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        /* color: #fefefe; */
+    }
+}
+
+@keyframes a {
+    0% {
+        transform: scale(1);
+        color: #decef1;
+        font-size: 40;
+    }
+    50% {
+        transform: scale(1.1);
+        color: #ba8bef;
+        font-size: 20;
+    }
+    100% {
+        transform: scale(1);
+        color: #fefefe;
+        font-size: 80;
+    }
+    
+}
